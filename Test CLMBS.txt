@@ -1,0 +1,43 @@
+1. The key issue with the proposed table design are the object_id_X and object_type_X fields. It is considered poor design to increment named fields when the data could be stored in a related table like so:
+
+2. Firstly, and most importantly, the answer should include one, and only one, query. There are numerous ways to achieve the expected result, but the correct way is the following:
+SELECT
+   posts.*,
+   COUNT(post_likes.user_id) AS likes 
+FROM
+   posts 
+   LEFT JOIN
+      post_likes 
+      ON posts.id = post_likes.post_id
+WHERE posts.user_id = 'XXX'
+GROUP BY posts.id
+
+3. 
+a. On-site Optimization.
+b. Ongoing Quality Content
+c. Off-site Authority Building
+
+4. 
+a. Use a Content Delivery Network (CDN)
+b. Move your website to a better host
+c. Optimize the size of images on your website
+d. Reduce the number of plugins
+e. Minimize the number of JavaScript and CSS files
+
+5. 
+a. The easiest way to resolve a conflicted file is to open it and make any necessary changes
+b. After editing the file, we can use the git add a command to stage the new merged content
+c. The final step is to create a new commit with the help of the git commit command
+d. Git will create a new merge commit to finalize the merge
+
+6. Python , Javascript , HTML , CSS , SQL , Rust , Java , PHP
+I chose PHP , HTML , CSS , and Javascript because that's the language I used when building a web , and that language was taught at my college at that time.
+
+7. Normalization is used to remove redundant data from the database and to store non-redundant and consistent data into it. Denormalization is used to combine multiple table data into one so that it can be queried quickly
+
+8. Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request. In that preflight, the browser sends headers that indicate the HTTP method and headers that will be used in the actual request.
+
+9.Pair programming is a common software development technique where two developers work on the same code, together, at the same computer. One developer takes the role of 'driver' – this person takes ownership of the keyboard and mouse and physically writes the code.
+And yes i've tried it 
+
+10. in file HTML
